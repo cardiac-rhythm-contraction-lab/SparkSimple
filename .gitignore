@@ -1,0 +1,46 @@
+# Python cache and build artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# Local virtual environments
+.venv/
+venv/
+env/
+
+# Test data is intentionally kept local because it is large.
+tests/data/*
+!tests/data/.gitkeep
+!tests/data/README.md
+
+# Internal development notes (not for public distribution).
+docs/dev_notes.md
+docs/migration_plan.md
+docs/progress.md
+
+# Batch validation runtime outputs.
+validation.pid
+validation_log.txt
+validation_results.txt
+validation_extended_log.txt
+validation_extended_err.txt
+
+# Diagnostic / audit scripts and their data outputs (not for distribution).
+docs/feature_extraction_audit/
+docs/feature_extraction_validation_plan.md
+
+# Sanity-check script stdout/stderr captures.
+scripts/*.txt
+
+
+# Per-machine last-selected-folder cache (SparkSimple2.py interactive picker).
+.sparksimple2_last_folder.json

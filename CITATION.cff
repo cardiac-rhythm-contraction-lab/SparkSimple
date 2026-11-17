@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "SparkSimple: automated detection of Ca2+ sparks in confocal frame-scan images"
+version: 2.1.0
+date-released: 2026-11-17
+license: GPL-3.0-or-later
+repository-code: "https://github.com/cardiac-rhythm-contraction-lab/SparkSimple"
+type: software
+authors:
+  - family-names: Manzano-Reche
+    given-names: Gabriel
+  - family-names: Vallmitjana
+    given-names: Alex
+  - family-names: Casabella
+    given-names: Sergi
+  - family-names: Tarifa
+    given-names: Carmen
+  - family-names: Jiménez-Sábado
+    given-names: Verónica
+  - family-names: Ginel
+    given-names: Antonino
+  - family-names: Guerra
+    given-names: José M.
+  - family-names: Benítez
+    given-names: Raúl
+  - family-names: Echebarria
+    given-names: Blas
+  - family-names: Hove-Madsen
+    given-names: Leif
+keywords:
+  - calcium sparks
+  - cardiac myocytes
+  - confocal microscopy
+  - image analysis

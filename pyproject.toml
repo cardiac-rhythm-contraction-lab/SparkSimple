@@ -1,0 +1,64 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sparksimple"
+version = "2.1.0"
+description = "Ca2+ spark detection and characterisation for cardiac confocal frame-scan (x-y-t) imaging"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "GPL-3.0-or-later"}
+authors = [
+  {name = "Gabriel Manzano-Reche"},
+  {name = "Alex Vallmitjana"},
+  {name = "Sergi Casabella"},
+  {name = "Carmen Tarifa"},
+  {name = "Verónica Jiménez-Sábado"},
+  {name = "Antonino Ginel"},
+  {name = "José M. Guerra"},
+  {name = "Raúl Benítez"},
+  {name = "Blas Echebarria"},
+  {name = "Leif Hove-Madsen"},
+]
+keywords = ["calcium sparks", "cardiac", "confocal", "image analysis", "ryr", "fluorescence"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Bio-Informatics",
+  "Topic :: Scientific/Engineering :: Image Processing",
+]
+dependencies = [
+  "numpy>=1.24",
+  "scipy>=1.10",
+  "tifffile>=2023.1",
+  "flask>=3.0",
+  "matplotlib>=3.6",
+]
+
+[project.urls]
+Homepage = "https://github.com/cardiac-rhythm-contraction-lab/SparkSimple"
+Repository = "https://github.com/cardiac-rhythm-contraction-lab/SparkSimple"
+"Bug Tracker" = "https://github.com/cardiac-rhythm-contraction-lab/SparkSimple/issues"
+
+[project.optional-dependencies]
+dev = [
+  "pytest",
+  "jupyter",
+  "nbconvert",
+  "pandas",
+]
+
+[project.scripts]
+sparksimple = "sparksimple.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
